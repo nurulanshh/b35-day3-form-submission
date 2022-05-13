@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
+body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  background-color: rgb(220, 223, 226);
 }
 
 nav {
-  background-color: #353333;
+  background-color: #f4f3f3;
   min-height: 60px;
   display: flex;
 }
@@ -28,6 +29,16 @@ nav .right-side {
   padding-right: 100px;
 }
 
+nav .right-side a {
+  font-size: 15px;
+  padding: 8px 20px;
+  background-color: #080808;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
 nav ul {
   list-style-type: none;
   margin-left: 50px;
@@ -39,48 +50,27 @@ nav ul li {
 }
 
 nav a {
-  color: #fff;
+  color: rgb(3, 3, 3);
   text-decoration: none;
 }
 
-nav a:hover {
-  text-decoration: none;
-  background: #0e0d0d;
-  border-radius: 30px;
-  padding: 15px 15px 15px 15px;
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: bold;;
-}
 
 nav a.active {
   text-decoration: none;
-  background: #0e0d0d;
-  border-radius: 30px;
-  margin-top: 10px;
   padding: 10px 10px 10px 10px;
-  color: #ffffff;
+  color: #000000;
   cursor: pointer;
   font-weight: bold;
 }
 
-nav a.active:hover {
-  text-decoration: none;
-  background: #0e0d0d;
-  border-radius: 30px;
-  margin-top: 10px;
-  padding: 10px 10px 10px 10px;
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: bold;}
-
 
 .container {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   margin: 50px 100px;
   border-radius: 4px;
   padding: 50px 40px;
   display: flex;
+  background-color: white;
 }
 
 /* Left */
@@ -98,7 +88,8 @@ nav a.active:hover {
 }
 
 .info {
-    display: flex;}
+    display: flex;
+}
 
 .btn-contact {
     text-decoration: none;
@@ -142,18 +133,21 @@ a {
   border-radius: 50px;
 }
 
-p a {
-  text-decoration: none;
-  color: #000;
-  border-radius: px;
-}
+
 
 .socmed {
-  font-size: 35px;
+  font-size: 20px;
   word-spacing: 20px;
   }
 
-
+.socmed a {font-size: 20px;
+  padding: 9px;
+  background-color: #080808;
+  border-radius: 100%;
+  color: white;
+  margin: auto;
+  text-decoration: none;
+}
  
 
 /* Right */
@@ -166,7 +160,9 @@ p a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width:100%;
   margin-top: -18px;
-  border-radius: 5px;
+  margin-bottom: -18px;
+  border-radius: 10px;
+  
 }
 
 img.img-profile {
@@ -185,7 +181,12 @@ img.img-profile {
 .header {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+label {
+  font-weight: bold;
 }
 
 input[type="text"],
@@ -197,21 +198,26 @@ textarea {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid white;
+  border-radius: 10px;
   box-sizing: border-box;
+  box-shadow: #000000;
+  resize: vertical;
+  
 }
 
 .btn-submit {
-  width: 100%;
+  
   background-color: #313131;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 50px;
   cursor: pointer;
-}
+  font-weight: bold;
+  float: right;
+  }
 
 .btn-submit:hover {
   background-color: #0a0a0a;
